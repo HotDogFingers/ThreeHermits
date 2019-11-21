@@ -1,4 +1,3 @@
-
 /* game namespace */
 var game = {
     /**
@@ -23,24 +22,19 @@ var game = {
       me.loader.preload(game.resources, this.loaded.bind(this));
     },
   
-    // Run on game resources loaded.
-    loaded : function () {
-      /**
- * callback when everything is loaded
- */
-loaded : function () {
-  // set the "Play/Ingame" Screen Object
-  me.state.set(me.state.PLAY, new game.PlayScreen());
+  loaded : function () {
+    // set the "Play/Ingame" Screen Object
+    me.state.set(me.state.PLAY, new game.PlayScreen());
 
-  // register our player entity in the object pool
-  me.pool.register("mainPlayer", game.PlayerEntity);
+    // register our player entity in the object pool
+    me.pool.register("mainPlayer", game.PlayerEntity);
 
-  // enable the keyboard
-  me.input.bindKey(me.input.KEY.LEFT,  "left");
-  me.input.bindKey(me.input.KEY.RIGHT, "right");
-  me.input.bindKey(me.input.KEY.X,     "jump", true);
+    // enable the keyboard
+    me.input.bindKey(me.input.KEY.LEFT,  "left");
+    me.input.bindKey(me.input.KEY.RIGHT, "right");
+    me.input.bindKey(me.input.KEY.X,     "jump", true);
 
-  // start the game
-  me.state.change(me.state.PLAY);
+    // start the game
+    me.state.change(me.state.PLAY);
     }
-  };
+};
