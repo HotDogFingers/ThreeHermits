@@ -50,9 +50,19 @@ game.resources = [
         "src": "data/img/map/Cobra Sprite Sheet.png"
     },
     {
+        "name": "decoration",
+        "type": "image",
+        "src": "data/img/map/decoration.png"
+    },
+    {
         "name": "Destructible Objects Sprite Sheet",
         "type": "image",
         "src": "data/img/map/Destructible Objects Sprite Sheet.png"
+    },
+    {
+        "name": "ground",
+        "type": "image",
+        "src": "data/img/map/ground.png"
     },
     {
         "name": "Layer_0000_9",
