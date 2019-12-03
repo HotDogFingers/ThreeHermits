@@ -30,6 +30,11 @@ game.resources = [
         "src": "data/img/area01_bkg1.png"
     },
     {
+        "name": "Gamelevel1_bkg0",
+        "type": "image",
+        "src": "data/img/Gamelevel1_bkg0.png"
+    },
+    {
         "name": "title_screen",
         "type": "image",
         "src": "data/img/gui/title_screen.png"

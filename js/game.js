@@ -22,19 +22,25 @@ var game = {
       me.loader.preload(game.resources, this.loaded.bind(this));
     },
   
-  loaded : function () {
-    // set the "Play/Ingame" Screen Object
-    me.state.set(me.state.PLAY, new game.PlayScreen());
+/**
+ * callback when everything is loaded
+ */
+loaded : function () {
+  // set the "Play/Ingame" Screen Object
+  me.state.set(me.state.PLAY, new game.PlayScreen());
 
-    // register our player entity in the object pool
-    me.pool.register("mainPlayer", game.PlayerEntity);
+  // register our player entity in the object pool
+  me.pool.register("mainPlayer", game.PlayerEntity);
 
-    // enable the keyboard
-    me.input.bindKey(me.input.KEY.LEFT,  "left");
-    me.input.bindKey(me.input.KEY.RIGHT, "right");
-    me.input.bindKey(me.input.KEY.X,     "jump", true);
+  // enable the keyboard
+  me.input.bindKey(me.input.KEY.LEFT,  "left");
+  me.input.bindKey(me.input.KEY.RIGHT, "right");
+  // map X, Up Arrow and Space for jump
+  me.input.bindKey(me.input.KEY.X,      "jump", true);
+  me.input.bindKey(me.input.KEY.UP,     "jump", true);
+  me.input.bindKey(me.input.KEY.SPACE,  "jump", true);
 
-    // start the game
-    me.state.change(me.state.PLAY);
-    }
+  // start the game
+  me.state.change(me.state.PLAY);
+}
 };
