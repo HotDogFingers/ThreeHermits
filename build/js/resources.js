@@ -150,16 +150,6 @@ game.resources = [
         "src": "data/img/sprite/wheelie_right.png"
     },
     {
-        "name": "Game",
-        "type": "tmx",
-        "src": "data/map/Game.tmx"
-    },
-    {
-        "name": "Game2",
-        "type": "tmx",
-        "src": "data/map/Game2.tmx"
-    },
-    {
         "name": "Gamelevel1",
         "type": "tmx",
         "src": "data/map/Gamelevel1.tmx"
