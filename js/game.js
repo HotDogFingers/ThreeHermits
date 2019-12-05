@@ -10,7 +10,7 @@ var game = {
     // Run on page load.
     onload : function () {
       // Initialize the video.
-      if (!me.video.init(640, 480, {wrapper : "screen", scale : "auto", scaleMethod : "flex-width"})) {
+      if (!me.video.init(1280, 960, {wrapper : "screen", scale : "auto", scaleMethod : "flex-width"})) {
         alert("Your browser does not support HTML5 canvas.");
         return;
       }
@@ -31,6 +31,7 @@ loaded : function () {
 
   // register our player entity in the object pool
   me.pool.register("mainPlayer", game.PlayerEntity);
+  me.pool.register("CoinEntity", game.CoinEntity);
 
   // enable the keyboard
   me.input.bindKey(me.input.KEY.LEFT,  "left");

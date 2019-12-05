@@ -1,34 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="60" height="33" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="38">
+<map version="1.2" tiledversion="1.3.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="60" height="33" tilewidth="32" tileheight="32" infinite="0" backgroundcolor="#e99e7f" nextlayerid="13" nextobjectid="84">
  <tileset firstgid="1" source="Ground Tiles.tsx"/>
  <tileset firstgid="26" source="Decoration Tiles.tsx"/>
- <imagelayer id="11" name="bg">
-  <image source="../img/Gamelevel1_bkg0.jpg" width="1920" height="1080"/>
+ <imagelayer id="11" name="bg" offsetx="100" offsety="100">
+  <image source="../img/Gamelevel1_bkg0.png" width="1920" height="1080"/>
  </imagelayer>
+ <objectgroup id="12" name="coins">
+  <object id="75" name="CoinEntity" x="288" y="256" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="77" name="CoinEntity" x="713.339" y="128.628" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="78" name="CoinEntity" x="769.124" y="128.628" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="79" name="CoinEntity" x="833.174" y="128.628" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="80" name="CoinEntity" x="895.157" y="128.628" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="81" name="CoinEntity" x="773.256" y="190.612" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="82" name="CoinEntity" x="835.24" y="192.678" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="83" name="CoinEntity" x="1231.93" y="285.653" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="8" name="collision">
-  <object id="15" x="0" y="416" width="156" height="27"/>
-  <object id="16" x="96" y="512" width="160" height="32"/>
-  <object id="17" x="96" y="256" width="96" height="22.6667"/>
-  <object id="18" x="256" y="288" width="87.3333" height="24.6667"/>
-  <object id="19" x="160" y="352" width="96" height="32"/>
+  <object id="15" x="0" y="416" width="134.455" height="27"/>
+  <object id="16" x="96" y="512" width="139.686" height="27.0754"/>
+  <object id="18" x="256" y="288" width="72.7907" height="24.6667"/>
   <object id="20" x="292" y="300"/>
-  <object id="21" x="383.797" y="513.282" width="97.1642" height="25.8741"/>
-  <object id="22" x="289" y="575.5" width="65" height="32"/>
-  <object id="23" x="1.33333" y="574.167" width="62" height="32"/>
-  <object id="24" x="96.6667" y="672.667" width="96.6667" height="32"/>
-  <object id="25" x="0.666667" y="764.667" width="64.6667" height="32"/>
-  <object id="26" x="222.667" y="832.667" width="134" height="32"/>
+  <object id="21" x="383.797" y="513.282" width="99.4658" height="25.8741"/>
+  <object id="22" x="289" y="575.5" width="50.8418" height="29.5377"/>
+  <object id="23" x="1.33333" y="574.167" width="39.2238" height="32"/>
+  <object id="24" x="107.131" y="672.667" width="63.4257" height="32"/>
+  <object id="25" x="0.666667" y="764.667" width="47.4306" height="32"/>
+  <object id="26" x="222.667" y="832.667" width="106.299" height="27.0754"/>
   <object id="27" x="-2" y="864.667" width="160" height="191.333"/>
   <object id="28" x="193.333" y="958.667" width="62.6667" height="32"/>
   <object id="29" x="288.667" y="991.333" width="63.3333" height="32"/>
   <object id="30" x="386" y="702" width="60" height="32"/>
-  <object id="31" x="546" y="926" width="92" height="32"/>
+  <object id="31" x="546" y="926" width="72.3016" height="32"/>
   <object id="32" x="705" y="1025" width="126" height="32"/>
-  <object id="33" x="864" y="959" width="61" height="32"/>
-  <object id="34" x="991" y="899" width="160" height="122"/>
-  <object id="35" x="706" y="866" width="124" height="57"/>
-  <object id="36" x="707" y="739" width="123" height="91"/>
-  <object id="37" x="833" y="670" width="93" height="26.7288"/>
+  <object id="33" x="878.158" y="959" width="33.9147" height="32"/>
+  <object id="34" x="1220" y="900" width="160" height="122"/>
+  <object id="35" x="706" y="866" width="103.686" height="57"/>
+  <object id="36" x="707" y="739" width="106.995" height="91"/>
+  <object id="37" x="841.618" y="670" width="70.8393" height="26.7288"/>
+  <object id="39" x="774.676" y="577.587" width="108.389" height="26.7288"/>
+  <object id="40" x="1255.44" y="737.02" width="42.5229" height="26.7288"/>
+  <object id="41" x="1124.94" y="673.001" width="47.4475" height="26.7288"/>
+  <object id="42" x="1294.22" y="513.567" width="70.8393" height="26.7288"/>
+  <object id="43" x="1206.19" y="575.124" width="70.8393" height="26.7288"/>
+  <object id="44" x="1164.95" y="450.163" width="70.8393" height="26.7288"/>
+  <object id="45" x="585.164" y="453.241" width="494.269" height="21.8042"/>
+  <object id="46" x="1128.58" y="390.636" width="40.1726" height="17.7288"/>
+  <object id="47" x="1226.58" y="325.636" width="42.8393" height="21.7288"/>
+  <object id="48" x="1319.58" y="259.636" width="44.8393" height="21.7288"/>
+  <object id="49" x="1417.58" y="229.636" width="42.8393" height="19.7288"/>
+  <object id="50" x="1258.58" y="742.136" width="42.8393" height="19.7288"/>
+  <object id="51" x="1451.58" y="613.136" width="42.8393" height="19.7288"/>
+  <object id="52" x="1546.58" y="580.136" width="42.8393" height="19.7288"/>
+  <object id="54" x="1546.58" y="677.136" width="42.8393" height="19.7288"/>
+  <object id="55" x="1450.58" y="743.136" width="42.8393" height="19.7288"/>
+  <object id="56" x="1367.08" y="805.136" width="29.3393" height="19.7288"/>
+  <object id="57" x="1459.08" y="868.136" width="34.3393" height="19.7288"/>
+  <object id="58" x="1769.58" y="452.136" width="42.8393" height="19.7288"/>
+  <object id="59" x="1674.58" y="292.136" width="42.8393" height="19.7288"/>
+  <object id="62" x="1545.58" y="230.136" width="325.839" height="19.7288"/>
+  <object id="63" x="1772.58" y="358.136" width="85.8393" height="19.7288"/>
+  <object id="64" x="1862.58" y="517.136" width="42.8393" height="19.7288"/>
+  <object id="65" x="1580.58" y="421.136" width="122.839" height="19.7288"/>
+  <object id="66" x="993" y="896" width="160" height="122"/>
+  <object id="67" x="1649" y="586" width="190" height="413"/>
+  <object id="68" x="96" y="256" width="96" height="32"/>
+  <object id="69" x="256" y="288" width="96" height="32"/>
+  <object id="70" x="160" y="352" width="96" height="32"/>
+  <object id="73" x="-46" y="1024.33" width="2174" height="191.333"/>
  </objectgroup>
  <layer id="2" name="Foreground" width="60" height="33">
   <data encoding="base64">
@@ -36,7 +114,7 @@
   </data>
  </layer>
  <objectgroup id="7" name="mainPlayer">
-  <object id="7" name="mainPlayer" x="128" y="128" width="56" height="64">
+  <object id="7" name="mainPlayer" x="128" y="128" width="64" height="64">
    <properties>
     <property name="frameheight" type="int" value="0"/>
     <property name="framewidth" type="int" value="64"/>
